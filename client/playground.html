@@ -1,0 +1,254 @@
+<template name="playground">
+
+<br><br><br>
+<!-- Remember - if you want to control functions globaly, don't declare them as var. Just name them. -->
+<div class="container"> 
+  <button type="button" class="startButton">
+  		<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+  </button> 
+  <button type="button" class=" stopButton btn btn-warning"> Stop all </button>
+  &nbsp; &nbsp; <div class="alert alert-success" role="alert"> Start the machine and have fun now!</div> 
+    <br><br>
+
+  <div class="row rounded bg-info">
+		<div class="col-md-2 col-xs-12"> 
+				<br> <p class="track" id="t1"> Drums </p>
+				<button type="button" class="myButton1 btn btn-success">
+				<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+			</button>
+			<button type="button" class="myButton2 btn btn-danger">
+				<span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+			</button>
+		</div>
+		<div class="col-md-10 col-xs-12"> 
+		    	<br>
+		    	    <div class="text1"> <p> Current Speed = {{sliderVal1}} </p> </div> </div>
+		    	 <div class="col-md-10 col-xs-12">
+  					<div class="slide" id="slider1">
+  				<br>
+  				</div> </div>
+  		    	<br> 
+  		    	&nbsp;
+  		    <div class="col-md-10 col-xs-12"> 
+  		    	<br>
+  		    	    <div class="text1"> <p> Amplitude Ramp = {{sliderVal9}} </p> </div> </div>
+  		    	  <div class="col-md-10 col-xs-12">
+  					<div class="slide" id="slider9"> 
+  				<br>
+  				</div> </div>
+  		    	<br>
+  		    </div>
+
+ &nbsp; &nbsp;
+
+  <div class="row rounded bg-info"> 
+        <div class="col-md-2 col-xs-12"> 
+			<br> <p class="track" id="t2"> Cello </p> 
+			<button type="button" class="myButton3 btn btn-success"> 
+				<span class="glyphicon glyphicon-play" aria-hidden="true"></span> 
+			</button>
+ 			<button type="button" class="myButton4 btn btn-danger">
+ 				<span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+ 			</button>
+ 		</div>
+ 		<div class="col-md-10 col-xs-12"> 
+		    <br>
+		        <p class="text1"> Current Speed = {{sliderVal2}} </p>
+  				<div class="slide" id="slider2">
+  			<br>
+  			</div> </div>
+  			<br>
+  			&nbsp;
+  		   <div class="col-md-10 col-xs-12"> 
+  		   <br> 
+  		        <p class="text1"> Amplitude Ramp = {{sliderVal10}} </p>
+  				<div class="slide" id="slider10">
+  			<br>
+  			</div> </div>
+  		    <br> 
+  		   </div>
+
+ &nbsp; &nbsp;
+ <div class="row rounded bg-info"> 
+        <div class="col-md-2 col-xs-12"> 
+			<br> <p class="track" id="t3"> Arp	</p> 
+
+			<button type="button" class="myButton5 btn btn-success">
+				<span class="glyphicon glyphicon-play" aria-hidden="true"></span> 
+			</button>
+ 			<button type="button" class="myButton6 btn btn-danger">
+ 				<span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+ 			</button>
+ 		</div>
+ 		<div class="col-md-10 col-xs-12"> 
+		    <br>
+		        <p class="text1"> Current Speed = {{sliderVal3}} </p>
+  				<div class="slide" id="slider3">
+  			<br>
+  			</div> </div>
+  			<br>
+  		   &nbsp;
+  		      <div class="col-md-10 col-xs-12"> 
+
+  		    <br>
+  		        <p class="text1"> Amplitude Ramp = {{sliderVal11}} </p>
+  				<div class="slide" id="slider11">
+  			<br>
+  			</div> </div>
+  		    <br> 
+  		    </div>
+
+ &nbsp; &nbsp;
+ <div class="row rounded bg-info"> 
+        <div class="col-md-2 col-xs-12"> 
+ 			<br> <p class="track" id="t4"> Piano </p>
+
+ 			<button type="button" class="myButton7 btn btn-success">
+ 				<span class="glyphicon glyphicon-play" aria-hidden="true"></span> 
+ 			</button>
+ 			<button type="button" class="myButton8 btn btn-danger">
+ 				<span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+ 			</button>
+ 		</div>
+ 		<div class="col-md-10 col-xs-12"> 
+		    <br>
+		        <p class="text1"> Current Speed = {{sliderVal4}} </p>
+  				<div class="slide" id="slider4">
+  			<br>
+  			</div> </div>
+  			<br>
+  			&nbsp;
+  		    	<div class="col-md-10 col-xs-12"> 
+
+  		    <br>
+  		    	    <p class="text1"> Amplitude Ramp = {{sliderVal12}} </p>
+  					<div class="slide" id="slider12">
+  			<br>
+  			</div> </div>
+  		    <br> 
+  		    </div>
+
+&nbsp; &nbsp;
+ <div class="row rounded bg-info">
+   		<div class="col-md-2 col-xs-12"> 
+ 			<br> <p class="track" id="t5"> Violin </p> 
+
+ 			<button type="button" class="myButton9 btn btn-success">
+ 				<span class="glyphicon glyphicon-play" aria-hidden="true"></span> 
+ 			</button>
+ 			<button type="button" class="myButton10 btn btn-danger">
+ 				<span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+ 			</button>
+ 		</div>
+ 		<div class="col-md-10 col-xs-12"> 
+		    <br>
+		        <p class="text1"> Current Speed = {{sliderVal5}} </p>
+  				<div class="slide" id="slider5">
+  			<br>
+  			</div> </div>
+  			<br>
+  			&nbsp;
+  		    	<div class="col-md-10 col-xs-12">
+
+  		    <br>
+  		    	    <p class="text1"> Amplitude Ramp = {{sliderVal13}} </p>
+  					<div class="slide" id="slider13">
+  			<br>
+  			</div> </div>
+  		    <br> 
+  		    </div>
+
+&nbsp; &nbsp;
+<div class="row rounded bg-info"> 
+		<div class="col-md-2 col-xs-12"> 
+ 			<br> <p class="track" id="t6"> Flute </p> 
+
+ 			<button type="button" class="myButton11 btn btn-success">
+ 				<span class="glyphicon glyphicon-play" aria-hidden="true"></span> 
+ 			</button>
+ 			<button type="button" class="myButton12 btn btn-danger">
+ 				<span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+ 			</button>
+ 		</div>
+ 		<div class="col-md-10 col-xs-12"> 
+		    <br>
+		    	<p class="text1"> Current Speed = {{sliderVal6}} </p>
+  				<div class="slide" id="slider6">
+  			<br>
+  			</div> </div>
+  			<br>
+  			&nbsp;
+  		    	<div class="col-md-10 col-xs-12">
+
+  		    <br>
+  		    		<p class="text1"> Amplitude Ramp = {{sliderVal14}} </p>
+  					<div class="slide" id="slider14">
+  			<br>
+  			</div> </div>
+  		    <br> 
+  		    </div>
+
+ &nbsp; &nbsp;
+ <div class="row rounded bg-info"> 
+   		<div class="col-md-2 col-xs-12"> 
+ 			<br> <p class="track" id="t7"> Viola </p> 
+
+ 			<button type="button" class="myButton13 btn btn-success">
+ 				<span class="glyphicon glyphicon-play" aria-hidden="true"></span> 
+ 			</button>
+ 			<button type="button" class="myButton14 btn btn-danger">
+ 				<span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+ 			</button>
+ 		</div>
+ 		<div class="col-md-10 col-xs-12"> 
+		    <br>
+		        <p class="text1"> Current Speed = {{sliderVal7}} </p>
+  				<div class="slide" id="slider7">
+  			<br>
+  			</div> </div>
+  			<br>
+  			&nbsp;
+  		    	<div class="col-md-10 col-xs-12"> 
+
+  		    <br> 
+  		    	    <p class="text1"> Amplitude Ramp = {{sliderVal15}} </p>
+  					<div class="slide" id="slider15">
+  			<br>
+  			</div> </div>
+  		    <br> 
+  		    </div>
+
+&nbsp;&nbsp;
+ <div class="row rounded bg-info"> 
+ 		<div class="col-md-2 col-xs-12"> 
+ 			<br> <p class="track" id="t8"> Xylo </p>
+
+ 			<button type="button" class="myButton15 btn btn-success">
+ 				<span class="glyphicon glyphicon-play" aria-hidden="true"></span> 
+ 			</button>
+ 			<button type="button" class="myButton16 btn btn-danger">
+ 				<span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+ 			</button>
+   		</div>
+   		<div class="col-md-10 col-xs-12"> 
+		    <br>
+		        <p class="text1"> Current Speed = {{sliderVal8}} </p>
+  				<div class="slide" id="slider8">
+  			<br>
+  			</div> </div>
+  			<br>
+  			&nbsp;
+  		    	<div class="col-md-10 col-xs-12"> 
+
+  		    <br>
+  		    	    <p class="text1"> Amplitude Ramp = {{sliderVal16}} </p>
+  					<div class="slide" id="slider16">
+  			<br>
+  			</div> </div>
+  		    <br> 
+  		    </div>
+ <br>
+
+ <h2> <div> {{startdac}} {{stopdac}} {{drums}} {{cello}} {{arp}} {{piano}} {{violin}} {{flute}} {{viola}} {{xylophone}} </div> </h2>
+</div>
+</template>
